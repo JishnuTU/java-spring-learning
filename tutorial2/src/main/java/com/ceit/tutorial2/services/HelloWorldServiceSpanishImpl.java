@@ -4,15 +4,14 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile({
-	"default",
-	"english"
-})
-public class HelloWorldServiceEnglishImpl implements HelloWorldService {
+@Profile("spanish")
+public class HelloWorldServiceSpanishImpl implements HelloWorldService {
 
 	@Override
 	public String getGreeting() {
-		return "Hello world";
+		// TODO Auto-generated method stub
+		return "Hello world in spanish";
 	}
+	
 
 }
